@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 2149611200351590411}
   - component: {fileID: 5283681276543659301}
   - component: {fileID: 4626642167773647492}
+  - component: {fileID: 4822682254434427385}
+  - component: {fileID: 6756835688761247986}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -162,9 +164,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerStats: {fileID: 11400000, guid: f22e1ce1d449296489c31f1307ae20bc, type: 2}
-  moveForce: 10
-  maxSpeed: 3
-  waterDrag: 3
-  buoyancyForce: 0.5
   rb: {fileID: 2149611200351590411}
   input: {x: 0, y: 0}
+--- !u!114 &4822682254434427385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2108053801569934949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6655b4cde59913e428f18fa844b1d3e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerStats: {fileID: 11400000, guid: f22e1ce1d449296489c31f1307ae20bc, type: 2}
+--- !u!114 &6756835688761247986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2108053801569934949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 301ad7178f5fda64aa6699e81bb23869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerStats: {fileID: 11400000, guid: f22e1ce1d449296489c31f1307ae20bc, type: 2}
+  oxygenBar: {fileID: 0}
+  oxygenDecreaseInterval: 2
+  oxygenDecreaseStep: 10

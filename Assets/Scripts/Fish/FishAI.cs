@@ -74,7 +74,7 @@ public class FishAI : MonoBehaviour
 
     void TransitionToState(FishState newState)
     {
-        Debug.Log("Switching to new state: " + newState);
+        // Debug.Log("Switching to new state: " + newState);
         currentState = newState;
         switch (newState)
         {
