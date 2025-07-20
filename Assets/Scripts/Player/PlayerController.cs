@@ -4,14 +4,23 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-
-    public float moveForce = 10f;
-    public float maxSpeed = 3f;
-    public float waterDrag = 3f;
-    public float buoyancyForce = 0.5f;
+    public PlayerStatsSO playerStats;
 
     public Rigidbody2D rb;
     public Vector2 input;
+
+    private float moveForce;
+    private float maxSpeed;
+    private float waterDrag;
+    private float buoyancyForce;
+
+    private void Awake()
+    {
+        moveForce = playerStats.moveForce;
+        maxSpeed = playerStats.maxSpeed;
+        waterDrag = playerStats.waterDrag;
+        buoyancyForce = playerStats.buoyancyForce;
+    }
 
     // Start is called before the first frame update
     void Start()
