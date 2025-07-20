@@ -26,6 +26,7 @@ public class PlayerController : MonoBehaviour
 
         Vector2 direction = rb.velocity.normalized;
 
+        // test
         Debug.DrawRay(transform.position, direction * 2f, Color.green);
     }
 
